@@ -1,0 +1,23 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+#window{width: 400px;height: 300px;margin:100px auto;overflow:hidden;border:1px solid red;font-size: 40px}
+#images{position: relative;}
+#images>img{position: absolute;width: 100%;transition: all .5s;}
+
+.page1{
+    transform: translateX(0);
+     z-index: 2;
+}
+.page2{
+    transform: translateX(100%);
+
+}
+.page3{
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+
+
+#images>div{
+    display:inline-block;position: absolute;width: 400px;height:300px;transition: all .5s;text-align: center;
+}
